@@ -1,7 +1,7 @@
 import { Model } from "../models/Model";
 
 export abstract class View<T extends Model<K>, K> {
-  regions: {[key: string]: Element } = {};
+  regions: { [key: string]: Element } = {};
 
   constructor( public parent: Element, public model: T){
     this.bindModel();
